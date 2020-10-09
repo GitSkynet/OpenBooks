@@ -8,8 +8,8 @@
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+    max-width: 30px;
+    max-height: 30px;
 }
 
 body {
@@ -284,6 +284,27 @@ footer {
 }
 
 @media (max-width: 880px) {
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+    .main {
+        line-height: normal;
+        font-size: auto;
+    }
+}
+
+@media (max-width: 1024px) {
     .footer-distributed {
         font: bold 14px sans-serif;
     }

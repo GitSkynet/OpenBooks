@@ -83,15 +83,6 @@
 
 /* --- RESET --- */
 
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    cursor: url('../images/gam1282.cur'), auto;
-    box-sizing: border-box;
-}
-
 :root {
     --text-color: #1A1A1A;
     --red-color: #E3350D;
@@ -106,7 +97,7 @@ body {
 }
 
 main {
-    padding: 30px;
+    padding: 5px;
 }
 
 .container {
@@ -378,6 +369,48 @@ button:disabled,
         display: block;
         width: 100%;
         margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+    .main {
+        line-height: normal;
+        font-size: auto;
+    }
+}
+
+@media (min-width: 880px) {
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+    .main {
+        line-height: normal;
+        font-size: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
         text-align: center;
     }
     .footer-distributed .footer-center i {
