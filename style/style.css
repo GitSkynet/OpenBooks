@@ -134,6 +134,34 @@ body {
 }
 
 
+/* CSS INJECT LIBROS EN WEB */
+
+#apilibro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: flex-start;
+}
+
+#apilibro>div {
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+
+/* <span>${person.craft}</span>
+        <h2>${person.title}</h2>
+        <img>${thumbnail}</img>
+        <p>${person.description}</p>
+        <p>${person.extract}</p> */
+
+
+/* END OF CSS INJECT LIBROS EN WEB */
+
+
 /* CSS OF THE FOOTER OF ALL THE PAGES ON THE WEB */
 
 .main {
