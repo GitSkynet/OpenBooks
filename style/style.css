@@ -140,23 +140,31 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: baseline;
-    align-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: stretch;
 }
 
 #apilibro>div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
     border: 1px solid black;
     border-radius: 15px;
     margin: 10px;
+    padding: 5px;
+    width: 200px;
+    height: max-content;
 }
 
-
-/* <span>${person.craft}</span>
-        <h2>${person.title}</h2>
-        <img>${thumbnail}</img>
-        <p>${person.description}</p>
-        <p>${person.extract}</p> */
+#apilibro>div>img {
+    border: 2px solid red;
+    border-radius: 15px;
+    justify-content: center;
+}
 
 
 /* END OF CSS INJECT LIBROS EN WEB */

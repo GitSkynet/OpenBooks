@@ -9,4 +9,3 @@ function myFunction() {
     }
     console.log('funcion')
 }
-console.log('carga script')

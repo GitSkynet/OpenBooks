@@ -1,40 +1,35 @@
-const astroUrl = 'http://api.open-notify.org/astros.json';
-const wikiUrl = 'https://en.wikipedia.org/api/rest_v1/page/summary/';
-const peopleList = document.getElementById('apilibro');
+const booksUrl = '?category=programacion';
+const wikiUrl = 'https://www.etnassoft.com/api/v1/get/?id=589&callback=';
+const booksList = document.getElementById('apilibro');
 const btn = document.querySelector('button');
 
-async function getPeopleInSpace(url) {
-    const peopleResponse = await fetch(url);
-    const peopleJSON = await peopleResponse.json();
 
-    const profiles = peopleJSON.people.map(async person => {
-        const craft = person.craft;
-        const profileResponse = await fetch(wikiUrl + person.name);
-        const profileJSON = await profileResponse.json();
+const getBooks = async() => {
+    const response = await fetch('https://www.etnassoft.com/api/v1/get/?results_range=30&num_items=20'); //get users list
+    const users = await response.json(); //parse JSON
+    const user = users;
+    return (user);
+};
 
-        return {...profileJSON, craft }
-    })
-    return Promise.all(profiles);
-}
 
 function generateHTML(data) {
-    data.map(person => {
+    data.map(user => {
         const section = document.createElement('div');
-        peopleList.appendChild(section);
-        const thumbnail = person.thumbnail ? `<img src='${person.thumbnail.source}'>` : '';
+        booksList.appendChild(section);
+        const thumbnail = user.thumbnail ? `<img src='${user.thumbnail}'>` : '';
         section.innerHTML = `
-        <span>${person.craft}</span>
-        <h2>${person.title}</h2>
         ${thumbnail}
-        <p>${person.description}</p>
-        <p>${person.extract}</p>
+        <span>${user.title}</span>
+        <h2>${user.author}</h2>
+        <p>${user.content_short}</p>
+        <button><a href="${user.url_download}"></a>Descarga</button>
         `
     })
 }
 
 btn.addEventListener('click', async(event) => {
     event.target.textContent = "Loading...";
-    const astros = await getPeopleInSpace(astroUrl);
+    const astros = await getBooks(booksUrl);
     generateHTML(astros);
     event.target.remove()
 });
