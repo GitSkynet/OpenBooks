@@ -14,19 +14,19 @@ Mediante una petición AJAX (Javascript), se puede establecer una conexión dire
 
 Esta primera versión del API facilita la creación de clientes independientes para OpenLibra, como por ejemplo de escritorio, que permitan rastrear el catálogo en tiempo real en busca de novedades, crear notificaciones con las actualizaciones, clasificar y buscar libros según un criterio concreto o facilitar la lectura de documentos directamente online sin navegador.
 
-## ¿Porqué OpenLibra? 🔩
+## ¿Why OpenLibra? 🔩
 
-Como desarrollador web, a menudo necesito recurrir a Internet para buscar información sobre las tecnologías con las que trabajo. La mayoría de las veces, suele ser suficiente una entrada en un blog especializado o un simple comentario en un foro para indicarme la dirección correcta a seguir.
+As a web developer, I often need to turn to the Internet to find information about the technologies I work with. Most of the time, an entry in a specialized blog or a simple comment in a forum is enough to point me in the right direction to follow.
 
-Sin embargo, en otras ocasiones, no hay mejor recurso para el aprendizaje que un buen libro o manual. Internet está repleto de material bibliográfico pero no siempre es fácil encontrarlo reunido en un mismo lugar. A menudo nos encontraremos realizando varias búsquedas que nos pongan sobre la pista de uno u otro documento interesante o que se adapte a nuestras necesidades concretas. Y esto, es especialmente difícil e incluso frustrante cuando, además de información, queremos que ésta sea también libre.
+However, at other times, there is no better resource for learning than a good book or manual. The Internet is full of bibliographic material but it is not always easy to find it gathered in one place. Often we will find ourselves carrying out several searches that put us on the track of one or another interesting document or that adapts to our specific needs. And this is especially difficult and even frustrating when, in addition to information, we want it to also be free.
 
-Las estrategias comerciales de editores y la gran cantidad de páginas que ofrecen libros en descarga directa de forma ilegitima, hacen muy complicado el acceder a recursos de interés cuando usamos un buscador. La mayoría de materiales que encontraremos, serán referencias a tiendas, alguna reseña en un foro, quizá una ojeada a los primeras páginas de un interesante título o directamente un enlace hacia un contenido protegido por derechos de autor.
+The commercial strategies of publishers and the large number of pages that offer books for direct download in an illegitimate way, make it very difficult to access resources of interest when we use a search engine. Most of the material that we will find will be references to stores, a review in a forum, perhaps a glance at the first pages of an interesting title or directly a link to a content protected by copyright.
 
-Es por todo que, sabiendo del esfuerzo que hacen muchos autores, de la gran cantidad de material que elaboran bajo licencias libres, y su alta calidad general, nace OpenLibra. La idea tras este proyecto es tratar de reunir en un mismo lugar, la mayor cantidad de recursos bibliográficos de calidad prestando un especial interés a aquellos escritos en lengua castellana. De este modo, todo aquel que tenga la necesidad de consultar un libro, o descargárselo tranquilamente para imprimirlo o leerlo en su dispositivo favorito, pueden acceder a este servicio y realizar sus búsquedas de una forma cómoda y categorizada.
+It is because of everything that, knowing the effort made by many authors, the large amount of material they produce under free licenses, and its high general quality, OpenLibra was born. The idea behind this project is to try to gather in the same place, the greatest quantity of quality bibliographic resources, paying special interest to those written in the Spanish language. In this way, anyone who has the need to consult a book, or download it quietly to print or read it on their favorite device, can access this service and carry out their searches in a comfortable and categorized way.
 
-Si encuentras entre todo el catálogo algo que te guste, no dudes en cogerlo.
+If you find something you like among the entire catalog, don't hesitate to pick it up.
 
-Todos los libros que componen esta biblioteca son libres y, por tanto, son tuyos... son de todos.
+All the books that make up this library are free and, therefore, they are yours ... they belong to everyone.
 
 ## Comenzando 🚀
 
