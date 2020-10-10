@@ -18,14 +18,8 @@ body {
     line-height: normal;
 }
 
-.navigatorsection {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: baseline;
-    align-content: flex-start;
-}
+
+/* Add a black background color to the top navigation */
 
 .topnav {
     background-color: #333;
@@ -68,26 +62,6 @@ body {
     display: none;
 }
 
-.sections {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: space-around;
-    background: rgb(17, 203, 227);
-    background: linear-gradient(40deg, rgba(17, 203, 227, 1) 1%, rgba(25, 197, 214, 1) 36%, rgba(17, 203, 227, 1) 64%, rgba(23, 70, 90, 0) 80%, rgba(71, 147, 146, 0) 98%);
-    padding: 0 30px;
-}
-
-.libro {
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 70px;
-    height: 90px;
-    margin: 10px;
-}
-
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 
@@ -119,58 +93,6 @@ body {
         text-align: left;
     }
 }
-
-@media (min-width: 1200px) {
-    .sections {
-        padding: 50px;
-        background: rgb(17, 203, 227);
-        background: linear-gradient(90deg, rgba(17, 203, 227, 1) 1%, rgba(25, 197, 214, 1) 36%, rgba(17, 203, 227, 1) 64%, rgba(23, 70, 90, 0) 80%, rgba(71, 147, 146, 0) 98%);
-    }
-}
-
-@media (max-width: 600px) {
-    .sections {
-        padding: 20px;
-        background: rgb(17, 203, 227);
-        background: linear-gradient(90deg, rgba(17, 203, 227, 1) 1%, rgba(25, 197, 214, 1) 36%, rgba(17, 203, 227, 1) 64%, rgba(23, 70, 90, 0) 80%, rgba(71, 147, 146, 0) 98%);
-    }
-}
-
-
-/* CSS INJECT LIBROS EN WEB */
-
-#apilibro {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: stretch;
-}
-
-#apilibro>div {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: center;
-    border: 1px solid black;
-    border-radius: 15px;
-    margin: 10px;
-    padding: 5px;
-    width: 200px;
-    height: max-content;
-}
-
-#apilibro>div>img {
-    border: 2px solid red;
-    border-radius: 15px;
-    justify-content: center;
-}
-
-
-/* END OF CSS INJECT LIBROS EN WEB */
 
 
 /* CSS OF THE FOOTER OF ALL THE PAGES ON THE WEB */
