@@ -24,7 +24,7 @@ function generateHTML(data) {
                 <div class="photo2">${thumbnail}</div>
                 <ul class="details">
                     <li class="author"><a href="#">Jane Doe</a></li>
-                    <li class="date">July. 15, 2015</li>
+                    <li class="date">${user.publisher_date}</li>
                     <li class="tags">
                         <ul>
                             <li><a href="#">Learn</a></li>
@@ -59,6 +59,7 @@ addEventListener('load', async(event) => {
 // const booksUrl2 = '?category=control_de_versiones&num_items=5';
 // const wikiUrl2 = 'https://www.etnassoft.com/api/v1/get/';
 // const booksList2 = document.getElementById('controlversion');
+// const btn = document.getElementsByTagName('button')
 
 // const getBooks = async() => {
 //     const response2 = await fetch(wikiUrl2 + booksUrl2); //get users list
@@ -101,7 +102,7 @@ addEventListener('load', async(event) => {
 //     })
 // }
 
-// addEventListener('load', async(event) => {
+// btn.addEventListener('click', async(event) => {
 //     event.target.textContent = "Loading...";
 //     const astros2 = await getBooks(booksUrl2);
 //     generateHTML(astros2);

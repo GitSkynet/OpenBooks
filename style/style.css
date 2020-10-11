@@ -153,6 +153,13 @@ header>a:hover {
     transition: transform .2s;
 }
 
+.blog-card .metadate .photo2>img {
+    border: 1px transparent black;
+    border-radius: 15px;
+    margin-left: 90px;
+    margin-right: auto;
+}
+
 .details,
 .details ul {
     margin: auto;
@@ -316,6 +323,10 @@ header>a:hover {
 }
 
 @media (min-width: 1280px) {
+    .targetas {
+        margin: 20px;
+        padding: 5px 50px;
+    }
     .metadate {
         flex-direction: row;
         max-width: 700px;
