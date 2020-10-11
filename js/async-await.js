@@ -1,7 +1,7 @@
 ////////////////////////////////// SECCION 1 ////////////////////////////////
 //////////////////////////////////   HTML  /////////////////////////////////
 
-const booksUrl = '?subcategory=html&num_items=5';
+const booksUrl = '?subcategory=html&num_items=10';
 const wikiUrl = 'https://www.etnassoft.com/api/v1/get/';
 const booksList = document.getElementById('apilibro');
 
@@ -19,29 +19,31 @@ function generateHTML(data) {
         booksList.appendChild(section);
         const thumbnail = user.cover ? `<img src='${user.cover}'>` : '';
         section.innerHTML = `
-        <div class="blog-card alted">
-            <div class="metadate">
-                <div class="photo2">${thumbnail}</div>
+        <div class="blog-card">
+            <div class="meta">
+                <div class="photo">${thumbnail}</div>
                 <ul class="details">
-                    <li class="author"><a href="#">Jane Doe</a></li>
+                    <li class="author"><a href="#">${user.author}</a></li>
                     <li class="date">${user.publisher_date}</li>
                     <li class="tags">
                         <ul>
-                            <li><a href="#">Learn</a></li>
-                            <li><a href="#">Code</a></li>
-                            <li><a href="#">JavaScript</a></li>
+                            <li><a href="#">Publisher: ${user.publisher}<hr></a></li>
+                            <li><a href="#">Pages: ${user.pages}</a></li>
+                            <li><a href="#">Language: ${user.language}</a></li>
+                            <li><a href="${user.url_details}">Details</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
             <div class="description">
-                <h1 class="targetheader1">${user.title}</h1>
-                <h2 class="targetheader2">${user.author}</h2>
-                <p class="targetp">${user.content_short}</p>
+                <h1>${user.title}</h1>
+                <h2>${user.author}</h2>
+                <p>${user.content_short}</p>
                 <p class="read-more">
-                    <a href="#">Read More</a>
+                    <a href="${user.url_download}">Donwload!</a>
                 </p>
             </div>
+        </div>
         `
     })
 }
