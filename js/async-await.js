@@ -1,11 +1,12 @@
-const booksUrl = '?category=programacion';
-const wikiUrl = 'https://www.etnassoft.com/api/v1/get/?id=589&callback=';
+const booksUrl = 'category=libros_programacion&criteria=most_viewed';
+const wikiUrl = 'https://www.etnassoft.com/api/v1/get/?';
 const booksList = document.getElementById('apilibro');
 const btn = document.querySelector('button');
 
 
+
 const getBooks = async() => {
-    const response = await fetch('https://www.etnassoft.com/api/v1/get/?results_range=30&num_items=20'); //get users list
+    const response = await fetch(wikiUrl + booksUrl); //get users list
     const users = await response.json(); //parse JSON
     const user = users;
     return (user);
@@ -22,7 +23,7 @@ function generateHTML(data) {
         <span>${user.title}</span>
         <h2>${user.author}</h2>
         <p>${user.content_short}</p>
-        <button><a href="${user.url_download}"></a>Descarga</button>
+        <a href="${user.url_download}">Descarga</a>
         `
     })
 }
@@ -33,3 +34,6 @@ btn.addEventListener('click', async(event) => {
     generateHTML(astros);
     event.target.remove()
 });
+
+
+//////
