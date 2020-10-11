@@ -1,9 +1,9 @@
-const booksUrl = 'category=desarrollo_web&num_items=10';
-const wikiUrl = 'https://www.etnassoft.com/api/v1/get/?';
+////////////////////////////////// SECCION 1 ////////////////////////////////
+//////////////////////////////////   HTML  /////////////////////////////////
+
+const booksUrl = '?subcategory=html&num_items=5';
+const wikiUrl = 'https://www.etnassoft.com/api/v1/get/';
 const booksList = document.getElementById('apilibro');
-const btn = document.querySelector('button');
-
-
 
 const getBooks = async() => {
     const response = await fetch(wikiUrl + booksUrl); //get users list
@@ -46,12 +46,64 @@ function generateHTML(data) {
     })
 }
 
-btn.addEventListener('click', async(event) => {
+addEventListener('load', async(event) => {
     event.target.textContent = "Loading...";
     const astros = await getBooks(booksUrl);
     generateHTML(astros);
     event.target.remove()
 });
 
+////////////////////////////////// FIN SECCION 1 ////////////////////////////////
 
-//////
+
+// const booksUrl2 = '?category=control_de_versiones&num_items=5';
+// const wikiUrl2 = 'https://www.etnassoft.com/api/v1/get/';
+// const booksList2 = document.getElementById('controlversion');
+
+// const getBooks = async() => {
+//     const response2 = await fetch(wikiUrl2 + booksUrl2); //get users list
+//     const users2 = await response2.json(); //parse JSON
+//     const user2 = users2;
+//     return (user2);
+// };
+
+
+// function generateHTML(data) {
+//     data.map(user2 => {
+//         const section2 = document.createElement('div');
+//         booksList2.appendChild(section);
+//         const thumbnail = user2.cover ? `<img src='${user2.cover}'>` : '';
+//         section2.innerHTML = `
+//         <div class="blog-card alted">
+//             <div class="metadate">
+//                 <div class="photo2">${thumbnail}</div>
+//                 <ul class="details">
+//                     <li class="author"><a href="#">Jane Doe</a></li>
+//                     <li class="date">July. 15, 2015</li>
+//                     <li class="tags">
+//                         <ul>
+//                             <li><a href="#">Learn</a></li>
+//                             <li><a href="#">Code</a></li>
+//                             <li><a href="#">JavaScript</a></li>
+//                         </ul>
+//                     </li>
+//                 </ul>
+//             </div>
+//             <div class="description">
+//                 <h1 class="targetheader1">${user.title}</h1>
+//                 <h2 class="targetheader2">${user.author}</h2>
+//                 <p class="targetp">${user.content_short}</p>
+//                 <p class="read-more">
+//                     <a href="#">Read More</a>
+//                 </p>
+//             </div>
+//         `
+//     })
+// }
+
+// addEventListener('load', async(event) => {
+//     event.target.textContent = "Loading...";
+//     const astros2 = await getBooks(booksUrl2);
+//     generateHTML(astros2);
+//     event.target.remove()
+// });
