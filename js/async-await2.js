@@ -1,4 +1,3 @@
-const booksUrl = '?subcategory=html&num_items=28';
 const wikiUrl = 'https://www.etnassoft.com/api/v1/get/';
 const booksList = document.getElementById('apilibro');
 
@@ -46,8 +45,9 @@ function generateHTML(data) {
 }
 
 addEventListener('load', async(event) => {
+
     event.target.textContent = "Loading...";
-    const astros = await getBooks(booksUrl);
+    const astros = await getBooks();
     generateHTML(astros);
     event.target.remove()
 });
