@@ -3,17 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>OpenBooks Signup</title>
+    <title>OpenBooks</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
 <body>
+
+    <!-- NAVBAR -->
     <navbar>
         <div class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Home</a>
+            <a href="index.html" class="active"><img class="logo" src="img/LogoCurtido.png" alt=""> </a>
+            <a href="signup.html">Sign In</a>
             <a href="login.html">Log In</a>
             <a href="about.html">About OpenBooks</a>
             <a href="FAQS.html">FAQS</a>
@@ -23,37 +28,32 @@
         </div>
     </navbar>
 
+    <!-- END NAVBAR -->
+
     <!-- HEADER -->
 
     <header>
         <div class="overlay">
-            <h1>Open<br>Books</h1>
-            <h3>The online library of resources for and by developers</h3>
+            <h1>OpenBooks</h1>
+            <h3>Mobile</h3>
         </div>
     </header>
 
     <!-- FIN HEADER -->
 
+    <!-- SECCIONES MAIN WEB -->
+
     <main>
-        <section class="signup">
-            <h2>Sign In</h2>
-            <div class="form-wrapper">
-                <form class="signup-form" action="">
-                    <input type="text" id="name" placeholder="Name" />
 
-                    <!-- hacemos el input email type text para que no moleste la validación -->
-                    <input type="text" id="email" placeholder="Email" />
-                    <input type="password" id="password" placeholder="****" />
-                    <input type="password" id="repeat-password" placeholder="****" />
+        <section>
+            <div class="navigatorsection"></div>
 
-                    <!-- El atributo `disabled` desactivará el botón. El botón será activado o desactivado por el método `checkButton` en Signup.js -->
-                    <button type="submit" class="button" id="signup-button" disabled>Sign Up</button>
-                </form>
-                <div class="message-container">
-                </div>
-            </div>
+            <div id="apilibro"></div>
         </section>
+
     </main>
+
+    <!-- FIN SECCIONES MAIN WEB -->
 
     <!-- FOOTER -->
 
@@ -101,11 +101,14 @@
 
     <!-- END OF FOOTER -->
 
-    <script src="js/Signup.js"></script>
-    <script src="js/User.js"></script>
-    <script src="js/Database.js"></script>
-    <script src="js/Validator.js"></script>
+    <!-- SCRIPTS JAVASCRIPT -->
+
+    <script>
+        const booksUrl = '?subcategory=dispositivos_moviles&num_items=40';
+    </script>
+
     <script type="text/javascript " src="/js/navbar.js "></script>
+    <script type="text/javascript " src="/js/async-await2.js "></script>
 </body>
 
 </html>
