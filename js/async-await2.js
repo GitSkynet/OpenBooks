@@ -17,7 +17,7 @@ function generateHTML(data) {
         section.innerHTML = `
         <div class="blog-card">
             <div class="meta">
-                <div class="photo">${thumbnail})</div>
+                <div class="photo">${thumbnail}</div>
                 <ul class="details">
                     <li class="author"><a href="#">${user.author}</a></li>
                     <li class="date">${user.publisher_date}</li>
@@ -49,5 +49,4 @@ addEventListener('load', async(event) => {
     event.target.textContent = "Loading...";
     const astros = await getBooks();
     generateHTML(astros);
-    event.target.remove()
 });
