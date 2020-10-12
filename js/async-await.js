@@ -1,7 +1,5 @@
 ////////////////////////////////// SECCION 1 ////////////////////////////////
 //////////////////////////////////   HTML  /////////////////////////////////
-
-const booksUrl = '?subcategory=html&num_items=10';
 const wikiUrl = 'https://www.etnassoft.com/api/v1/get/';
 const booksList = document.getElementById('apilibro');
 
