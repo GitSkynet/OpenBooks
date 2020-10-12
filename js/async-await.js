@@ -52,7 +52,7 @@ addEventListener('load', async(event) => {
     event.target.textContent = "Loading...";
     const astros = await getBooks(booksUrl);
     generateHTML(astros);
-    event.target.remove()
+    // event.target.remove()
 });
 
 ////////////////////////////////// FIN SECCION 1 ////////////////////////////////
