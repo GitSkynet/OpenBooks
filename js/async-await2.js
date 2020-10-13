@@ -18,31 +18,24 @@ function generateHTML(data) {
         booksList.appendChild(section);
         const thumbnail = user.cover ? `<img src='${user.cover}'>` : '';
         section.innerHTML = `
-        <div class="blog-card">
-            <div class="meta">
-                <div class="photo">${thumbnail}</div>
-                <ul class="details">
-                    <li class="author"><a href="#">${user.author}</a></li>
-                    <li class="date">${user.publisher_date}</li>
-                    <li class="tags">
-                        <ul>
-                            <li><a href="#">Publisher: ${user.publisher}<hr></a></li>
-                            <li><a href="#">Pages: ${user.pages}</a></li>
-                            <li><a href="#">Language: ${user.language}</a></li>
-                            <li><a href="${user.url_details}">Details</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="description">
-                <h1>${user.title}</h1>
-                <h2>${user.author}</h2>
-                <p>${user.content_short}</p>
-                <p class="read-more">
-                    <a href="${user.url_download}">Donwload!</a>
-                </p>
-            </div>
-        </div>
+        <div class="card">
+                    <div class="image">
+                        ${thumbnail}
+                    </div>
+                    <div class="details">
+                        <div class="center">
+                            <h1>${user.title}<br><span>${user.author}</span></h1>
+                            <p>${user.content_short}</p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
         `
     })
 }
@@ -68,3 +61,42 @@ addEventListener('load', async(event) => {
 //     generateHTML(books2);
 //     event.target.remove()
 // });
+
+// <
+// div class = "blog-card" >
+//     <
+//     div class = "meta" >
+//     <
+//     div class = "photo" > $ { thumbnail } < /div> <
+// ul class = "details" >
+//     <
+//     li class = "author" > < a href = "#" > ${user.author} < /a></li >
+//     <
+//     li class = "date" > $ { user.publisher_date } < /li> <
+// li class = "tags" >
+//     <
+//     ul >
+//     <
+//     li > < a href = "#" > Publisher: $ { user.publisher } < hr > < /a></li >
+//     <
+//     li > < a href = "#" > Pages: $ { user.pages } < /a></li >
+//     <
+//     li > < a href = "#" > Language: $ { user.language } < /a></li >
+//     <
+//     li > < a href = "${user.url_details}" > Details < /a></li >
+//     <
+//     /ul> < /
+// li > <
+//     /ul> < /
+// div > <
+//     div class = "description" >
+//     <
+//     h1 > $ { user.title } < /h1> <
+// h2 > $ { user.author } < /h2> <
+// p > $ { user.content_short } < /p> <
+// p class = "read-more" >
+//     <
+//     a href = "${user.url_download}" > Donwload! < /a> < /
+// p > <
+//     /div> < /
+// div >

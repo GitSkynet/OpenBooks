@@ -39,7 +39,7 @@ When we have the API calls working and showing the data we want, we go on to mak
 Once the technical part is finished, it's time to correct bugs, debug the code, implement improvements and carry out the deployment to see how the web is looking and how it behaves.
 
 
-### Pre-requisitos 📋
+### Pre-requisites 📋
 
 Before starting, I made the Wireframe by hand, to have a basic idea of ​​how to layout the project and carry it out. From this basic outline, thanks to the Trello and Balsamiq tools, I was able to reorganize my idea and shape the project before implementing the code.
 
@@ -105,7 +105,7 @@ Working on it
 
 This project is carried out by obtaining data from the OpenLibra API, a free and open source API with a database of more than 3500 books at present. Free to use API, without commercial purposes.
 
-## Expresiones de Gratitud 🎁
+## Thanks to... 🎁
 
 * Thank all the IronHack colleagues for their patience and help at different times in order to move this project forward. Above all, specific mention to Daniel de Sousa for his patience and explanations, to Julián Abasolo for the resolution and constant help, and to all the BootCamp colleagues in general who are always there to give you a hand and help you where they can. An entire experience that even though it is tough, is very beautiful and rewarding 📢
 
