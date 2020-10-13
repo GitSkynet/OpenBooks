@@ -6,7 +6,7 @@ All managed through the OpenLibra API, which offers us a vast library of online 
 This project is designed to be able to have a website where we can go when any programming question arises,
 we need guides or HOW-TO'S on how to program in a specific language or simply, we want to expand our knowledge on the subject.
 
-## Pero...Qué es OpenLibra? 📋
+## But...Whats is OpenLibra? 📋
 
 OpenLibra has a lightweight web service with which it is possible to remotely access most of the data in its bibliographic catalog, currently with a library of !! +3500 books !!
 
