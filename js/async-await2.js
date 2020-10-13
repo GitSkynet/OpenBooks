@@ -1,8 +1,11 @@
-const wikiUrl = 'https://www.etnassoft.com/api/v1/get/';
+const bookApi = 'https://www.etnassoft.com/api/v1/get/';
 const booksList = document.getElementById('apilibro');
+const resultfilter = '?results_range=20,10&category=desarrollo_web';
+const buttonpage = document.querySelector('button')
+
 
 const getBooks = async() => {
-    const response = await fetch(wikiUrl + booksUrl); //get users list
+    const response = await fetch(bookApi + booksUrl); //get users list
     const users = await response.json(); //parse JSON
     const user = users;
     return (user);
@@ -45,8 +48,23 @@ function generateHTML(data) {
 }
 
 addEventListener('load', async(event) => {
-
     event.target.textContent = "Loading...";
-    const astros = await getBooks();
-    generateHTML(astros);
+    const books = await getBooks();
+    generateHTML(books);
 });
+
+// //////////////////////////////PAGINACIÓN WEB ////////////////////////////////////////
+
+// const getBooks2 = async() => {
+//     const response = await fetch(bookApi + resultfilter); //get users list
+//     const users = await response.json(); //parse JSON
+//     const user = users;
+//     return (user);
+// };
+
+// buttonpage.addEventListener('click', async(event) => {
+//     event.target.textContent = "Loading...";
+//     const books2 = await getBooks2();
+//     generateHTML(books2);
+//     event.target.remove()
+// });

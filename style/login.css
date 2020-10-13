@@ -15,7 +15,6 @@
 
 /* HEADER RESPONSIVE */
 
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
 *,
 *::before,
 *::after {
@@ -25,7 +24,7 @@
 
 body {
     background-color: #ffffff00;
-    font-family: Raleway, sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 br {
@@ -34,7 +33,7 @@ br {
 
 .header {
     width: 100%;
-    height: 80vh;
+    height: 400px;
     position: relative;
     display: grid;
     grid-template-rows: max-content 1fr;
@@ -42,7 +41,6 @@ br {
 }
 
 .header__logo {
-    fill: white;
     width: 6rem;
     padding: 1rem;
     cursor: pointer;
@@ -62,7 +60,7 @@ br {
     z-index: -1;
 }
 
-.header>.header__title {
+.header__title {
     grid-area: 0.3333333333;
     align-self: center;
     justify-self: center;
@@ -86,16 +84,6 @@ br {
     text-shadow: 0px 2px 4px rgba(0, 0, 0, .4);
 }
 
-.header__log--icon {
-    fill: currentColor;
-    margin-right: 0.5rem;
-    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, .5));
-}
-
-.header__log--text {
-    text-transform: capitalize;
-}
-
 @media (min-width: 360px) {
     .header>.header__title {
         text-transform: uppercase;
@@ -105,6 +93,9 @@ br {
 
 
 /* FIN HEADER RESPONSIVE */
+
+
+/* NAVBAR */
 
 
 /* Style the links inside the navigation bar */
@@ -175,6 +166,9 @@ br {
 }
 
 
+/* FIN NAVBAR */
+
+
 /* --- RESET --- */
 
 :root {
@@ -192,6 +186,16 @@ body {
 
 main {
     padding: 5px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: stretch;
+    background-image: url("/img/wallpaperlogin.png");
+    background-position: center;
+    ;
 }
 
 .container {
@@ -235,7 +239,6 @@ input {
     margin: 10px;
     height: 40px;
     border: none;
-    border: solid 2px var(--red-color);
     border-radius: 15px;
     text-align: center;
 }
@@ -271,28 +274,37 @@ button:disabled,
 
 .signup,
 .login {
-    margin-top: 85px;
     text-align: center;
+    width: 300px;
+    background-image: url("/img/iPhone.png");
+    background-repeat: no-repeat;
+    height: 500px;
+    padding-top: 100px;
 }
 
 .form-wrapper {
-    padding: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding-top: 10px;
 }
 
 .form-wrapper>form {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     max-width: 600px;
 }
 
+form {
+    padding-top: 10px;
+    margin: 50px;
+}
+
 .message-container {
-    width: 100%;
-    max-width: 800px;
+    width: 85%;
+    max-width: 500px;
 }
 
 .message-container p {
@@ -312,16 +324,6 @@ button:disabled,
 
 /* CSS OF THE FOOTER OF ALL THE PAGES ON THE WEB */
 
-.main {
-    max-height: 550px;
-    ;
-    background-color: #292c2f;
-    color: white;
-    font-size: 38pt;
-    text-align: center;
-    line-height: 550px;
-}
-
 .footer-distributed {
     background-color: #292c2f;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -329,8 +331,7 @@ button:disabled,
     width: 100%;
     text-align: left;
     font: bold 16px sans-serif;
-    padding: 55px 50px;
-    margin-top: 80px;
+    padding: 20px;
 }
 
 .footer-distributed .footer-left,

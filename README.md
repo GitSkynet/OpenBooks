@@ -8,11 +8,11 @@ we need guides or HOW-TO'S on how to program in a specific language or simply, w
 
 ## Pero...Qué es OpenLibra? 📋
 
-OpenLibra dispone de un ligero servicio web con el que es posible acceder de forma remota a la mayoría de los datos de su catálogo bibliográfico, contanto en la actualidad con una biblioteca de !! +3500 libros!!
+OpenLibra has a lightweight web service with which it is possible to remotely access most of the data in its bibliographic catalog, currently with a library of !! +3500 books !!
 
-Mediante una petición AJAX (Javascript), se puede establecer una conexión directa con el sistema y obtener resultados en tiempo real sobre la consulta. El sistema devuelve un objeto JSON con el que es sencillo trabajar directamente en Javascript o en otros lenguajes de servidor como PHP o Java.
+Through an AJAX (Javascript) request, you can establish a direct connection with the system and obtain results in real time on the query. The system returns a JSON object with which it is easy to work directly in Javascript or in other server languages ​​such as PHP or Java.
 
-Esta primera versión del API facilita la creación de clientes independientes para OpenLibra, como por ejemplo de escritorio, que permitan rastrear el catálogo en tiempo real en busca de novedades, crear notificaciones con las actualizaciones, clasificar y buscar libros según un criterio concreto o facilitar la lectura de documentos directamente online sin navegador.
+This first version of the API facilitates the creation of independent clients for OpenLibra, such as desktop, that allow you to crawl the catalog in real time in search of news, create notifications with updates, classify and search for books according to a specific criteria or facilitate the reading documents directly online without a browser.
 
 ## ¿Why OpenLibra? 🔩
 
@@ -28,72 +28,90 @@ If you find something you like among the entire catalog, don't hesitate to pick 
 
 All the books that make up this library are free and, therefore, they are yours ... they belong to everyone.
 
-## Comenzando 🚀
+## Starting the project 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+First of all, I started with the wireframe. With the layout of the web very clear and precise, I structure all the HTML and give a few styles with CSS to check how it looks.
 
-Mira **Deployment** para conocer como desplegar el proyecto.
+Once the structure of the web is done, it's time to connect with the API to obtain the results of categories we want to show, and implement it on the web through JavaScript.
+
+When we have the API calls working and showing the data we want, we go on to make the Log In and Sign In pages, adding functionality with JavaScript so that it verifies that the fields entered are valid.
+
+Once the technical part is finished, it's time to correct bugs, debug the code, implement improvements and carry out the deployment to see how the web is looking and how it behaves.
 
 
 ### Pre-requisitos 📋
 
-Antes de comenzar, realizé el Wireframe a mano, para tener una idea básica de cómo maquetar el proyecto y realizarlo. A partir de este esquema básico, gracias a las herramientas de Trello y Balsamiq, pude reorganizar mi idea y darle forma al proyecto antes de implementar el código.
+Before starting, I made the Wireframe by hand, to have a basic idea of ​​how to layout the project and carry it out. From this basic outline, thanks to the Trello and Balsamiq tools, I was able to reorganize my idea and shape the project before implementing the code.
 
-(https://www.trello.com)
+Trello Board
+
+(https://trello.com/b/70OKLY1s)
+
+Wireframe Balsamiq
 
 (https://balsamiq.com)
 
+Web OpenLibra
 
+(https://openlibra.com/es/)
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+API OpenLibra
 
-## Pruebando GitHub Pages ⚙️
+(https://openlibra.com/es/page/public-api)
 
-Después de realizar todos los cambios en la web en la rama Master, creamos una nueva rama para poder hacer el deploy del proyecto en una página de GitHub y poder ver el resultado colgado en la web. Esto nos resultará de mucha utilidad para poder comprobar cómo va quedando el resultado de nuestra web y qué cambios nos faltan por implementar para que todo quede como queremos
+## Testing GitHub Pages ⚙️
 
-### Analice las pruebas end-to-end 🔩
+After making all the changes on the web in the Master branch, we create a new branch to be able to deploy the project on a GitHub page and see the result posted on the web. This will be very useful to us to be able to check how the result of our website is looking and what changes we need to implement so that everything is as we want
 
-Fase de testeo de funcionalidades, refactorización de código y añadadido de nuevas funciones
+### Analyze end-to-end tests 🔩
 
+Functionalities testing phase, code refactoring and adding new functions
 
-## Despliegue 📦
+!!Working on it!!
 
-_Agrega notas adicionales sobre como hacer deploy_
+## Deploy 📦
 
-## Construido con 🛠️
+How to deploy the web in my personal server and at a GitHub Pages. Inconvenients, problems, debugs...
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+!! Working on it !!
 
-* [w3Schools](https://www.w3schools.com/) - Fuente de recursos y conocimientos sobre el diseño y desarrollo web
-* [Font Awesome](https://fontawesome.com/) - Fuente para iconos de la Web
-* [BootStrap](https://getbootstrap.com/) - Usado para generar algunos estilos en el diseño de la Web
-* [VSCODE](https://code.visualstudio.com/) - Usado para crear el código en HTML, CSS3 & JavasCript
+## Building with the following resources 🛠️
+
+* [w3Schools](https://www.w3schools.com/) - Source of resources and knowledge about web design and development
+* [Font Awesome](https://fontawesome.com/) - Source to search icons for the web
+* [Creativos Online](hhttps://www.creativosonline.org/blog/) -This source offers millions of examples and templates to add to your web. Incredible!
+* [VSCODE](https://code.visualstudio.com/) - Ide that I used to program this web entirely
+* [GitHub](https://github.com/GitSkynet)
 
 
 ## Wiki 📖
 
-Puedes encontrar mucho más de cómo utilizar la API de OpenLibra directamente desde su web, pudiendo construir tú mismo tu sitio personal de recursos sobre la gran base de datos de OpenLibra 
+You can find much more about how to use the OpenLibra API directly from its website, being able to build your personal resource site on the large OpenLibra database.
+
 * [OpenLibra](https://openlibra.com/es/page/public-api)
 
-## Versionado 📌
+## Versioning 📌
 
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+Working on it
 
-## Autores ✒️
+## Authors ✒️
 
-* **Carlos Curtido** - *Diseño*
-* **Carlos Curtido** - *Pprogramación* - [Carlos Curtido](https://github.com/GitSkynet)
-* **Carlos Curtido** - *Documentación & búsqueda* 
+* **Carlos Curtido** - *Design*
+* **Carlos Curtido** - *Programming* - [Carlos Curtido](https://github.com/GitSkynet)
+* **Carlos Curtido** - *Search & documentation* 
 
 
-## Licencia 📄
+## Licenses 📄
 
-Este proyecto está realizado obteniendo los datos de la API de OpenLibra, API libre y de código abierto con una base de datos de más de 3500 libros en la actualidad. Todos los derechos reservados.
+This project is carried out by obtaining data from the OpenLibra API, a free and open source API with a database of more than 3500 books at present. Free to use API, without commercial purposes.
 
 ## Expresiones de Gratitud 🎁
 
-* Agradecer a todos los compañeros de IronHack su paciencia y ayuda en diferentes momentos para poder tirar este proytecto adelante. Sobretodo, mención específica a Daniel de Sousa por su paciencia y explicaciones, y a Julián Abasolo por la resolución y la ayuda constante 📢
-* Invítame a una cerveza 🍺 o a un café ☕ si te ha gustado el proyecto! 
+* Thank all the IronHack colleagues for their patience and help at different times in order to move this project forward. Above all, specific mention to Daniel de Sousa for his patience and explanations, to Julián Abasolo for the resolution and constant help, and to all the BootCamp colleagues in general who are always there to give you a hand and help you where they can. An entire experience that even though it is tough, is very beautiful and rewarding 📢
+
+THANKS TO EVERYONE!!
+
+* buy me a beer 🍺 or a coffee ☕ if you liked the project!
 
 ---
-⌨️ con ❤️ por [Carlos Curtido](https://github.com/GitSkynet) 😊
+⌨️ with ❤️, with much ❤️ for [Carlos Curtido](https://github.com/GitSkynet) 😊
