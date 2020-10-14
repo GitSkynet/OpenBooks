@@ -337,8 +337,8 @@ body {
         width: 100%;
         text-align: left;
         font: bold 16px sans-serif;
-        padding: 10px 50px;
-        margin-top: 80px;
+        padding: 5px 50px;
+
     }
     .footer-distributed .footer-left,
     .footer-distributed .footer-center,
@@ -428,7 +428,7 @@ body {
         margin-bottom: 20px;
     }
     .footer-distributed .footer-icons {
-        margin-top: 25px;
+        margin-top: 55px;
     }
     .footer-distributed .footer-icons a {
         display: inline-block;
@@ -442,7 +442,6 @@ body {
         text-align: center;
         line-height: 25px;
         margin-right: 3px;
-        margin-bottom: 5px;
     }
     @media (max-width: 880px) {
         .footer-distributed {
