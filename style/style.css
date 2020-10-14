@@ -19,6 +19,10 @@
              padding: 2px;
              background-color: rgb(234, 236, 238);
          }
+
+         main>div{
+             text-align: center;
+         }
          
          .navigatorsection {
              display: flex;
@@ -552,6 +556,9 @@
          }
          
          .blog-card .description .read-more a {
+             background-color: blue;
+             padding: 8px 10px;
+             border-radius: 15px;
              color: #f8f8f8;
              text-decoration: double;
              display: inline-block;
@@ -778,24 +785,27 @@
             font-size: auto;
         }
     }
-    @media (max-width: 1024px) {
-        .footer-distributed {
-            font: bold 14px sans-serif;
-        }
-        .footer-distributed .footer-left,
-        .footer-distributed .footer-center,
-        .footer-distributed .footer-right {
-            display: block;
-            width: 100%;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .footer-distributed .footer-center i {
-            margin-left: 0;
-        }
-        .main {
-            line-height: normal;
-            font-size: auto;
-        }
+@media (max-width: 1024px) {
+    .footer-distributed {
+        font: bold 14px sans-serif;
     }
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+    .main {
+        line-height: normal;
+        font-size: auto;
+    }
+}
     /* END OF CSS OF FOOTER */
+
+
+    

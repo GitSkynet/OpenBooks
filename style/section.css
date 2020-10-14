@@ -19,7 +19,7 @@ body {
     background-color: rgb(234, 236, 238);
 }
 
-#apilibro>div {
+#apilibro {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -29,9 +29,10 @@ body {
 }
 
 #apilibro>div>div {
-    width: 200px;
-    height: 300px;
-    margin: 5px;
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    margin: 10px;
 }
 
 .topnav {
@@ -50,10 +51,11 @@ body {
 }
     @media (min-width: 640px) {
         #apilibro {
+            margin: 5px;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             align-content: flex-start;
         }
@@ -239,12 +241,11 @@ body {
     }
     /* FIN HEADER RESPONSIVE */
 
-/* PRUEBA//////////////////////////////////////////////////////////////////////// */
+/* LIBROS SECCIONES WEB */
 
 .card {
-    width: 260px;
+    width: 360px;
     height: 400px;
-    background: #000;
 }
 
 
@@ -326,16 +327,19 @@ body {
 .card .details .center ul li a:hover {
     background: #ff3636;
 }
-    /* CSS OF THE FOOTER OF ALL THE PAGES ON THE WEB */
-    footer {
-        max-height: 3000px;
-        background-color: #292c2f;
-        color: white;
-        font-size: 38pt;
-        text-align: center;
-        line-height: 550px;
-        bottom: 0;
-    }
+
+/* LIBROS SECCIONES WEB */
+
+/* CSS OF THE FOOTER OF ALL THE PAGES ON THE WEB */
+footer {
+    max-height: 3000px;
+    background-color: #292c2f;
+    color: white;
+    font-size: 38pt;
+    text-align: center;
+    line-height: 550px;
+    bottom: 0;
+}
     .footer-distributed {
         background-color: #292c2f;
         box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);

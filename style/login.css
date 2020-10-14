@@ -182,11 +182,12 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: baseline;
+    align-items: flex-end;
     align-content: stretch;
-    background-image: url("/img/wallpaperlogin.png");
+    background-image: url("../img/wallpaperlogin.png");
     background-size: cover;
     background-position: center;
+    background-color: rgb(234, 236, 238);
     ;
 }
 
@@ -268,7 +269,7 @@ button:disabled,
 .login {
     text-align: center;
     width: 300px;
-    background-image: url("/img/iPhone.png");
+    background-image: url("../img/iPhone.png");
     background-repeat: no-repeat;
     height: 500px;
     padding-top: 100px;
@@ -453,6 +454,7 @@ footer {
         margin-left: 0;
     }
     .main {
+
         line-height: normal;
         font-size: auto;
     }
