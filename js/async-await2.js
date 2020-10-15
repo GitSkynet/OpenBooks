@@ -27,11 +27,7 @@ function generateHTML(data) {
                             <h1>${user.title}<br><span>${user.author}</span></h1>
                             <p>${user.content_short}</p>
                             <ul>
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="${user.url_download}">Download</a></li>
                             </ul>
                         </div>
                     </div>
