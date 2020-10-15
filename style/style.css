@@ -535,6 +535,7 @@
          .blog-card .description h1,
          .blog-card .description h2 {
              font-family: Poppins, sans-serif;
+             text-align: center;
          }
          
          .blog-card .description h1 {
@@ -580,8 +581,9 @@
          }
          
          .blog-card p {
-             position: relative;
+             position: sticky;
              margin: 1rem 0 0;
+             text-align: center;
          }
          
          .blog-card p:first-of-type {
@@ -592,8 +594,8 @@
              content: "";
              position: absolute;
              height: 5px;
-             background: #5ad67d;
-             width: 35px;
+             background: #2a5199;
+             width: 30%;
              top: -0.75rem;
              border-radius: 3px;
          }
