@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>OpenBooks</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="style/section.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>OpenBooks</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style/section.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    </head>
 
 <body>
 
     <!-- NAVBAR -->
-    <navbar>
+    <div>
         <div class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
             <a href="signup.html">Sign In</a>
@@ -26,35 +27,36 @@
                 <i class="fa fa-bars"></i>
             </a>
         </div>
-    </navbar>
+    </div>
 
     <!-- END NAVBAR -->
 
     <!-- HEADER -->
 
     <div class="header">
-        <h1 class="header__title">Learning DataBases</h1>
+        <h1 class="header__title">Top of Education</h1>
         <div class="header__bg"></div>
         <div class="header__logo"></div>
         <div class="header__log"></div>
     </div>
     <!-- FIN HEADER -->
 
-    <!-- SECCIONES MAIN WEB -->
+        <!-- SECTION MAIN -->
 
     <main>
+        <div>
+            <p>The section where you can find all the most downloades resources related to Education</p>
+        </div>
 
-        <section>
-            <div class="navigatorsection"></div>
+        <section id="apilibro">
 
-            <div id="apilibro"></div>
         </section>
 
+        <!-- FIN SECTION MAIN -->
     </main>
 
-    <!-- FIN SECCIONES MAIN WEB -->
 
-    <!-- FOOTER -->
+    <!-- FOOTER, FALTA REFACTORIZARLO -->
 
     <footer class="footer-distributed">
 
@@ -103,7 +105,7 @@
     <!-- SCRIPTS JAVASCRIPT -->
 
     <script>
-        const booksUrl = '?category=bases_de_datos&num_items=55';
+        const booksUrl = '?category=educacion-biblioteca&criteria=most_viewed';
     </script>
 
     <script type="text/javascript " src="js/navbar.js "></script>
