@@ -300,6 +300,7 @@
       }
       
       .container {
+        box-sizing: border-box;
         overflow: hidden;
         padding: 20px;
         background-color: rgb(234, 236, 238);
@@ -362,11 +363,11 @@
       }
        
       .card:nth-of-type(2) .image-container {
-        background-image: url("https://www.w3schools.com/w3css/img_lights.jpg")
+        background-image: url("https://eacea.ec.europa.eu/national-policies/eurydice/sites/eurydice/files/styles/a4/public/publicationc-full/235_en_digital_education_2019.png?itok=0trS7q68")
       }
       
       .card:nth-of-type(3) .image-container {
-        background-image: url("https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+        background-image: url("https://www.superprof.es/blog/wp-content/uploads/2017/08/comics-marvel-980x613.jpg")
       }
       .card:nth-of-type(4) .image-container {
         background-image: url("https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
@@ -374,11 +375,7 @@
       .card:nth-of-type(5) .image-container {
         background-image: url("https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg")
       }
-      
     
-      
-      
-      
       .image-container {
         width: 8em;
         height: 8em;
