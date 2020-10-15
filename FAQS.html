@@ -2,11 +2,13 @@
 <html lang="es">
 
 <head>
+    <meta charset="UTF-8">
     <title>OpenBooks FAQS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="style/aboutfaqs.css">
+    <link rel="stylesheet" href="style/about.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
@@ -34,30 +36,66 @@
 
     <main>
 
-        <div>
-            <img src="img/openlibra.jpg" alt="">
-            <h3>Why OpenBooks?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi amet suscipit, inventore provident consequuntur natus expedita tempora explicabo quisquam totam, nisi eius, eveniet maxime rem laudantium numquam doloribus tenetur quaerat.</p>
+        <!-- CARD COLLAPSE -->
+        <section class="faqs">
+            <h1>How can I help you?</h1>
+            <div class="form">
+                <input type="text" placeholder="Search..">
+            </div>
+        </section>
+            
+        <div class="bs4">
+            <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Collapsible Group Item #1
+                      </button>
+                    </h5>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Collapsible Group Item #2
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Collapsible Group Item #3
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
 
-        <div>
-            <img src="img/openlibra.jpg" alt="">
-            <h3>Como nace este proyecto?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi amet suscipit, inventore provident consequuntur natus expedita tempora explicabo quisquam totam, nisi eius, eveniet maxime rem laudantium numquam doloribus tenetur quaerat.</p>
-        </div>
+        <!-- FIN CARD COLLAPSE -->
 
-        <div>
-            <img src="img/faqsbackground.jpg" alt="">
-            <h3>Why OpenBooks?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi amet suscipit, inventore provident consequuntur natus expedita tempora explicabo quisquam totam, nisi eius, eveniet maxime rem laudantium numquam doloribus tenetur quaerat.</p>
-        </div>
 
-        <div>
-            <img src="img/librosbackground.jpg" alt="">
-            <h3>Why OpenBooks?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi amet suscipit, inventore provident consequuntur natus expedita tempora explicabo quisquam totam, nisi eius, eveniet maxime rem laudantium numquam doloribus tenetur quaerat.</p>
-        </div>
-    </section>
+        <!-- FORM GET IN TOUCH -->
 
         <div>
             <form class="my-form">
@@ -113,6 +151,7 @@
             </form>
         </div>
 
+        <!-- FIN FORM GET IN TOUCH -->
 
     </main>
 
@@ -162,9 +201,14 @@
 
     <!-- END OF FOOTER -->
 
-    <script type="text/javascript " src="js/navbar.js "></script>
-    <script type="text/javascript " src="js/form.js "></script>
-</body>
+
+        <!-- SCRIPTS JAVASCRIPT -->
+        <script type="text/javascript " src="js/navbar.js "></script>
+        <script type="text/javascript " src="js/form.js "></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
 
 
 </html>
